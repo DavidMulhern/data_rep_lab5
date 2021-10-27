@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h1>My web page</h1>
+        <h3>Get Method</h3>
+
+        <!-- It's calling /name , method will call is http get() , then pass up fname/lname -->
+        <!-- Information collcted and moved used to -> /name -->
+        <form action="/name" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Send data as part of a post method-->
+        <!-- change method to "post"-->
+        <!--Need to write a method to listen for this in the server - app.post('/name')-->
+        <h3>Post Method</h3>
+        <form action="/name" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
